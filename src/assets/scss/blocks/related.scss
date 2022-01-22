@@ -1,0 +1,40 @@
+.related {
+    border-bottom: 1px solid #1C1C1C;
+    padding-bottom:.5rem;
+}
+
+.related__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint($mobile-bp) {
+        flex-direction: column;
+    }
+}
+
+.related__list-item {
+    width: 50%;
+    margin-bottom: 2.5rem;
+
+    @include breakpoint($mobile-bp) {
+        width: 100%;
+    }
+}
+
+.related__list-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #F3EBA2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    a {
+        color: inherit;
+    }
+}
+
+.related-list-date {
+    font-size: 1.2rem;
+    color: #828282;
+}
